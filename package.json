@@ -1,0 +1,19 @@
+{
+  "name": "ocprojet2",
+  "version": "1.0.0",
+  "description": "Transformez votre CV en site Web",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./scss/style.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chpe1/OCProjet2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chpe1/OCProjet2/issues"
+  },
+  "homepage": "https://github.com/chpe1/OCProjet2#readme"
+}
