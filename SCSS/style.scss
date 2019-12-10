@@ -1,4 +1,4 @@
-$colour-primary:#7451eb;
+$colour-primary:#FF7043;
 
 $breakpoints: (
     mobile: 576px,
@@ -20,9 +20,20 @@ $breakpoints: (
 body {
     padding: 0;
     margin: 0;
-    font-family: Helvetica, Georgia, Arial, sans-serif;
+    font-family: Lucida, Helvetica, Georgia, Arial, sans-serif;
     color : grey;
+    font-weight: 100;
   }
+
+a {
+  color: white;  
+}
+
+a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
 .marge{
     margin-left: 11%;
 }
@@ -69,7 +80,7 @@ body {
                 padding: 5px;
                 }
             .loisirs{
-                margin-top: 90%;
+                margin-top: 100vh;
                  @include mobile-only{
                     margin-top: 0;
                 }
@@ -120,7 +131,9 @@ body {
                       color : $colour-primary;
                   }
                   hr{
-                      color: $colour-primary;
+                      height: 3px;
+                      background-color: $colour-primary;
+                      border: none;
                   }
                   .subSection{
                       display: flex;
@@ -136,7 +149,7 @@ body {
                       }
                       .content{
                           width: 65%;
-                          font-weight: 100;
+                          font-weight: 50;
                       }
                   }
                   .recommandations{
@@ -151,12 +164,6 @@ body {
               }
               .container{
                   display: flex;
-                  .left{
-                      
-                  }
-                  .right{
-                      
-                  }
               }              
           }   
   }

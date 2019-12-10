@@ -1,8 +1,18 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: Helvetica, Georgia, Arial, sans-serif;
+  font-family: Lucida, Helvetica, Georgia, Arial, sans-serif;
   color: grey;
+  font-weight: 100;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: white;
 }
 
 .marge {
@@ -25,7 +35,7 @@ body {
 }
 #page aside {
   width: 30%;
-  background-color: #7451eb;
+  background-color: #FF7043;
   color: #ffffff;
 }
 @media all and (max-device-width: 576px) {
@@ -58,12 +68,12 @@ body {
 }
 #page aside h3 {
   background-color: white;
-  color: #7451eb;
+  color: #FF7043;
   text-align: center;
   padding: 5px;
 }
 #page aside .loisirs {
-  margin-top: 90%;
+  margin-top: 100vh;
 }
 @media all and (max-device-width: 576px) {
   #page aside .loisirs {
@@ -100,7 +110,7 @@ body {
   }
 }
 #page main #name {
-  color: #7451eb;
+  color: #FF7043;
 }
 #page main h1 {
   font-size: 3rem;
@@ -113,17 +123,19 @@ body {
 }
 #page main #souligne {
   text-decoration: underline;
-  text-decoration-color: #7451eb;
+  text-decoration-color: #FF7043;
 }
 #page main .party {
   margin-top: 0;
 }
 #page main .party i {
   margin-right: 5%;
-  color: #7451eb;
+  color: #FF7043;
 }
 #page main .party hr {
-  color: #7451eb;
+  height: 3px;
+  background-color: #FF7043;
+  border: none;
 }
 #page main .party .subSection {
   display: flex;
@@ -144,7 +156,7 @@ body {
 }
 #page main .party .subSection .content {
   width: 65%;
-  font-weight: 100;
+  font-weight: 50;
 }
 #page main .party .recommandations {
   display: flex;
