@@ -1,5 +1,22 @@
 $colour-primary:#7451eb;
 
+$breakpoints: (
+    mobile: 576px,
+    tablet: 768px
+);
+
+@mixin mobile-only {
+    @media all and (max-device-width: map-get($breakpoints, mobile)) {
+        @content;
+    }
+}
+
+@mixin tablet-only {
+    @media all and (max-device-width: map-get($breakpoints, tablet)) {
+        @content;
+    }
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -12,40 +29,74 @@ body {
   
   #page {
     display: flex;
+    flex-wrap: wrap;
+    @include mobile-only{
+        flex-direction: column-reverse;
+    }
+    @include tablet-only{
+      flex-direction: column-reverse;
+    }
         aside {
             width: 30%;
             background-color: $colour-primary;
-            color: #ffffff;   
-                .myphoto img{
-                    border-radius: 50px;
-                    width: 100px;
-                    height: 100px;
-                    margin-left: auto;
-                    margin-right: auto;
-                    display: block;
+            color: #ffffff;
+            @include mobile-only{
+                width: 100%;
+            }
+            @include tablet-only{
+                width: 100%;
+            }
+            .myphoto {
+                    @include mobile-only{
+                      display: none;
                   }
-                h3 {
-                    background-color: white;
-                    color: $colour-primary;
-                    text-align: center;
-                    padding: 5px;
-                    }
-                .loisirs{
-                    margin-top: 90%;
+                  @include tablet-only{
+                      display: none;
+                  }
+            }
+            .myphoto img{
+                border-radius: 50px;
+                width: 100px;
+                height: 100px;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+              }
+            h3 {
+                background-color: white;
+                color: $colour-primary;
+                text-align: center;
+                padding: 5px;
                 }
-                .icons{
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-around;
+            .loisirs{
+                margin-top: 90%;
+                 @include mobile-only{
+                    margin-top: 0;
                 }
+                @include tablet-only{
+                    margin-top: 0;
+                }
+            }
+            .icons{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+            }
           }
-          p.content {
+          .content {
             font-size: 1.2em;
             margin-right: 10%;
             text-align: justify;
+            word-wrap: break-word;
           }
           main {
             width: 70%;
+            @include mobile-only{
+                width: 100%;
+            }
+            @include tablet-only{
+                width: 100%;
+            }
               #name{
                   color: $colour-primary;
               }
@@ -73,6 +124,12 @@ body {
                   }
                   .subSection{
                       display: flex;
+                      @include mobile-only{
+                            flex-direction: column;
+                        }
+                        @include tablet-only{
+                            flex-direction: column;
+                        }
                       .date {
                           width: 35%;
                           font-weight: 600;
