@@ -1,33 +1,105 @@
+$colour-primary:#7451eb;
+
 body {
     padding: 0;
     margin: 0;
+    font-family: Helvetica, Georgia, Arial, sans-serif;
+    color : grey;
   }
+.marge{
+    margin-left: 11%;
+}
   
   #page {
     display: flex;
-        & aside {
+        aside {
             width: 30%;
-            background-color: #7451eb;
+            background-color: $colour-primary;
             color: #ffffff;   
-                & img {
-                    border-radius: 50%;
-                    width: 50%;
+                .myphoto img{
+                    border-radius: 50px;
+                    width: 100px;
+                    height: 100px;
                     margin-left: auto;
                     margin-right: auto;
                     display: block;
                   }
-                & h3 {
+                h3 {
                     background-color: white;
-                    color: #7451eb;
+                    color: $colour-primary;
                     text-align: center;
                     padding: 5px;
-                  }
+                    }
+                .loisirs{
+                    margin-top: 90%;
+                }
+                .icons{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                }
           }
-          & p.content {
-            margin-left: 10%;
+          p.content {
             font-size: 1.2em;
+            margin-right: 10%;
+            text-align: justify;
           }
-          & main {
+          main {
             width: 70%;
-          }
+              #name{
+                  color: $colour-primary;
+              }
+              h1 {
+                  font-size: 3rem;
+                  margin-bottom: 0;
+                  font-weight: normal;
+              }
+              h2 {
+                  font-size: 1.25rem;
+                  margin-bottom: 10%;
+              }
+              #souligne {
+                  text-decoration : underline;
+                  text-decoration-color: $colour-primary;
+              }
+              .party{
+                  margin-top: 0;
+                  i {
+                      margin-right: 5%;
+                      color : $colour-primary;
+                  }
+                  hr{
+                      color: $colour-primary;
+                  }
+                  .subSection{
+                      display: flex;
+                      .date {
+                          width: 35%;
+                          font-weight: 600;
+                      }
+                      .content{
+                          width: 65%;
+                          font-weight: 100;
+                      }
+                  }
+                  .recommandations{
+                      display: flex;
+                      .left{
+                          width: 50%;
+                      }
+                      .right{
+                          width: 50%;
+                      }
+                  }
+              }
+              .container{
+                  display: flex;
+                  .left{
+                      
+                  }
+                  .right{
+                      
+                  }
+              }              
+          }   
   }

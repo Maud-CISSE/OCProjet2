@@ -1,6 +1,12 @@
 body {
   padding: 0;
   margin: 0;
+  font-family: Helvetica, Georgia, Arial, sans-serif;
+  color: grey;
+}
+
+.marge {
+  margin-left: 11%;
 }
 
 #page {
@@ -11,9 +17,10 @@ body {
   background-color: #7451eb;
   color: #ffffff;
 }
-#page aside img {
-  border-radius: 50%;
-  width: 50%;
+#page aside .myphoto img {
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -24,12 +31,71 @@ body {
   text-align: center;
   padding: 5px;
 }
+#page aside .loisirs {
+  margin-top: 90%;
+}
+#page aside .icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 #page p.content {
-  margin-left: 10%;
   font-size: 1.2em;
+  margin-right: 10%;
+  text-align: justify;
 }
 #page main {
   width: 70%;
+}
+#page main #name {
+  color: #7451eb;
+}
+#page main h1 {
+  font-size: 3rem;
+  margin-bottom: 0;
+  font-weight: normal;
+}
+#page main h2 {
+  font-size: 1.25rem;
+  margin-bottom: 10%;
+}
+#page main #souligne {
+  text-decoration: underline;
+  text-decoration-color: #7451eb;
+}
+#page main .party {
+  margin-left: 10%;
+  margin-top: 0;
+}
+#page main .party i {
+  margin-right: 5%;
+  color: #7451eb;
+}
+#page main .party hr {
+  color: #7451eb;
+}
+#page main .party .subSection {
+  display: flex;
+}
+#page main .party .subSection .date {
+  width: 35%;
+  font-weight: 600;
+}
+#page main .party .subSection .content {
+  width: 65%;
+  font-weight: 100;
+}
+#page main .party .recommandations {
+  display: flex;
+}
+#page main .party .recommandations .left {
+  width: 50%;
+}
+#page main .party .recommandations .right {
+  width: 50%;
+}
+#page main .container {
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */
