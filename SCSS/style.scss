@@ -41,9 +41,6 @@ a:hover{
 #page {
     display: flex;
     flex-wrap: wrap;
-    @include mobile-only{
-        flex-direction: column-reverse;
-    }
     @include tablet-only{
       flex-direction: column-reverse;
     }
@@ -51,17 +48,18 @@ a:hover{
             width: 30%;
             background-color: $colour-primary;
             color: #ffffff;
-            @include mobile-only{
-                width: 100%;
-            }
             @include tablet-only{
                 width: 100%;
             }
             .myphoto {
+<<<<<<< HEAD
                     @include mobile-only{
                       display: none;
                         }
                     @include tablet-only{
+=======
+                  @include tablet-only{
+>>>>>>> Week2
                       display: none;
                         }
             }
@@ -81,9 +79,6 @@ a:hover{
             }
             .loisirs{
                 margin-top: 100vh;
-                 @include mobile-only{
-                    margin-top: 0;
-                }
                 @include tablet-only{
                     margin-top: 0;
                 }
@@ -93,6 +88,7 @@ a:hover{
                 align-items: center;
                 justify-content: space-around;
             }
+<<<<<<< HEAD
         }
     .content {
         font-size: 1.2em;
@@ -137,6 +133,76 @@ a:hover{
                   height: 3px;
                   background-color: $colour-primary;
                   border: none;
+=======
+          }
+          .content {
+            font-size: 1.2em;
+            margin-right: 10%;
+            text-align: justify;
+            word-wrap: break-word;
+          }
+          main {
+            width: 70%;
+            @include tablet-only{
+                width: 100%;
+            }
+            @include mobile-only{
+                width: 100%;
+            }
+              #name{
+                  color: $colour-primary;
+              }
+              h1 {
+                  font-size: 3rem;
+                  margin-bottom: 0;
+                  font-weight: normal;
+              }
+              h2 {
+                  font-size: 1.25rem;
+                  margin-bottom: 10%;
+              }
+              #souligne {
+                  text-decoration : underline;
+                  text-decoration-color: $colour-primary;
+              }
+              .party{
+                  margin-top: 0;
+                  i {
+                      margin-right: 5%;
+                      color : $colour-primary;
+                  }
+                  hr{
+                      height: 3px;
+                      background-color: $colour-primary;
+                      border: none;
+                  }
+                  .subSection{
+                      display: flex;
+                        @include tablet-only{
+                            flex-direction: column;
+                        }
+                      .date {
+                          width: 35%;
+                          font-weight: 600;
+                      }
+                      .content{
+                          width: 65%;
+                          font-weight: 50;
+                      }
+                  }
+                  .recommandations{
+                      display: flex;
+                      @include tablet-only{
+                        flex-direction: column;
+                      }
+                      .left{
+                          width: 50%;
+                      }
+                      .right{
+                          width: 50%;
+                      }
+                  }
+>>>>>>> Week2
               }
             .subSection{
                 display: flex;
