@@ -23,11 +23,6 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
 }
-@media all and (max-device-width: 576px) {
-  #page {
-    flex-direction: column-reverse;
-  }
-}
 @media all and (max-device-width: 768px) {
   #page {
     flex-direction: column-reverse;
@@ -38,19 +33,9 @@ a:hover {
   background-color: #FF7043;
   color: #ffffff;
 }
-@media all and (max-device-width: 576px) {
-  #page aside {
-    width: 100%;
-  }
-}
 @media all and (max-device-width: 768px) {
   #page aside {
     width: 100%;
-  }
-}
-@media all and (max-device-width: 576px) {
-  #page aside .myphoto {
-    display: none;
   }
 }
 @media all and (max-device-width: 768px) {
@@ -75,11 +60,6 @@ a:hover {
 #page aside .loisirs {
   margin-top: 100vh;
 }
-@media all and (max-device-width: 576px) {
-  #page aside .loisirs {
-    margin-top: 0;
-  }
-}
 @media all and (max-device-width: 768px) {
   #page aside .loisirs {
     margin-top: 0;
@@ -99,12 +79,12 @@ a:hover {
 #page main {
   width: 70%;
 }
-@media all and (max-device-width: 576px) {
+@media all and (max-device-width: 768px) {
   #page main {
     width: 100%;
   }
 }
-@media all and (max-device-width: 768px) {
+@media all and (max-device-width: 576px) {
   #page main {
     width: 100%;
   }
@@ -140,11 +120,6 @@ a:hover {
 #page main .party .subSection {
   display: flex;
 }
-@media all and (max-device-width: 576px) {
-  #page main .party .subSection {
-    flex-direction: column;
-  }
-}
 @media all and (max-device-width: 768px) {
   #page main .party .subSection {
     flex-direction: column;
@@ -160,6 +135,11 @@ a:hover {
 }
 #page main .party .recommandations {
   display: flex;
+}
+@media all and (max-device-width: 768px) {
+  #page main .party .recommandations {
+    flex-direction: column;
+  }
 }
 #page main .party .recommandations .left {
   width: 50%;

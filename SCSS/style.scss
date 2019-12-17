@@ -41,9 +41,6 @@ a:hover{
   #page {
     display: flex;
     flex-wrap: wrap;
-    @include mobile-only{
-        flex-direction: column-reverse;
-    }
     @include tablet-only{
       flex-direction: column-reverse;
     }
@@ -51,16 +48,10 @@ a:hover{
             width: 30%;
             background-color: $colour-primary;
             color: #ffffff;
-            @include mobile-only{
-                width: 100%;
-            }
             @include tablet-only{
                 width: 100%;
             }
             .myphoto {
-                    @include mobile-only{
-                      display: none;
-                  }
                   @include tablet-only{
                       display: none;
                   }
@@ -81,9 +72,6 @@ a:hover{
                 }
             .loisirs{
                 margin-top: 100vh;
-                 @include mobile-only{
-                    margin-top: 0;
-                }
                 @include tablet-only{
                     margin-top: 0;
                 }
@@ -102,10 +90,10 @@ a:hover{
           }
           main {
             width: 70%;
-            @include mobile-only{
+            @include tablet-only{
                 width: 100%;
             }
-            @include tablet-only{
+            @include mobile-only{
                 width: 100%;
             }
               #name{
@@ -137,9 +125,6 @@ a:hover{
                   }
                   .subSection{
                       display: flex;
-                      @include mobile-only{
-                            flex-direction: column;
-                        }
                         @include tablet-only{
                             flex-direction: column;
                         }
@@ -154,6 +139,9 @@ a:hover{
                   }
                   .recommandations{
                       display: flex;
+                      @include tablet-only{
+                        flex-direction: column;
+                      }
                       .left{
                           width: 50%;
                       }
