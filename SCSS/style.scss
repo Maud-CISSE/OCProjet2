@@ -1,15 +1,9 @@
 $colour-primary:#FF7043;
 
 $breakpoints: (
-    laptopL: 1440px,
+    laptop: 1024px,
     tablet: 768px
 );
-
-@mixin laptopL-only {
-    @media all and (max-device-width: map-get($breakpoints, laptopL)) {
-        @content;
-    }
-}
 
 @mixin tablet-only {
     @media all and (max-device-width: map-get($breakpoints, tablet)) {
@@ -35,7 +29,8 @@ a:hover{
 }
 
 .marge{
-    margin-left: 11%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
   
   #page {
@@ -43,6 +38,7 @@ a:hover{
     flex-wrap: wrap;
     @include tablet-only{
       flex-direction: column-reverse;
+        font-size: 0.9em;
     }
         aside {
             width: 30%;
@@ -51,6 +47,7 @@ a:hover{
             min-height: 100vh;
             @include tablet-only{
                 width: 100%;
+                min-height: 100%;
             }
             .myphoto {
                   @include tablet-only{
@@ -72,25 +69,39 @@ a:hover{
                 padding: 5px;
                 }
             .loisirs{
-                margin-top: 100vh;
+                margin-top: 70vh;
                 @include tablet-only{
                     margin-top: 0;
-                }
-                @include laptopL-only{
-                    margin-top : 90vh;
                 }
             }
             .icons{
                 display: flex;
                 align-items: center;
                 justify-content: space-around;
+                margin-bottom: 0;
+                img {
+                    border: 1px solid black;
+                    border-radius: 50% 50% 50% 50%;
+                }
             }
           }
           .content {
             font-size: 1.2em;
-            margin-right: 10%;
-            text-align: justify;
             word-wrap: break-word;
+            width: 65%;
+            font-weight: 50;
+              @include tablet-only{
+                  width: 90%;
+              }
+          }
+          .colleft {
+            font-size: 1.2em;
+            word-wrap: break-word;
+            width: 90%;
+            font-weight: 50;
+              @include tablet-only{
+                  width: 90%;
+              }
           }
           main {
             width: 70%;
@@ -132,10 +143,9 @@ a:hover{
                       .date {
                           width: 35%;
                           font-weight: 600;
-                      }
-                      .content{
-                          width: 65%;
-                          font-weight: 50;
+                          @include tablet-only{
+                            width: 100%;
+                        }
                       }
                   }
                   .recommandations{

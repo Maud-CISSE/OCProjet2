@@ -16,7 +16,8 @@ a:hover {
 }
 
 .marge {
-  margin-left: 11%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 #page {
@@ -26,6 +27,7 @@ a:hover {
 @media all and (max-device-width: 768px) {
   #page {
     flex-direction: column-reverse;
+    font-size: 0.9em;
   }
 }
 #page aside {
@@ -37,6 +39,7 @@ a:hover {
 @media all and (max-device-width: 768px) {
   #page aside {
     width: 100%;
+    min-height: 100%;
   }
 }
 @media all and (max-device-width: 768px) {
@@ -59,28 +62,44 @@ a:hover {
   padding: 5px;
 }
 #page aside .loisirs {
-  margin-top: 100vh;
+  margin-top: 70vh;
 }
 @media all and (max-device-width: 768px) {
   #page aside .loisirs {
     margin-top: 0;
   }
 }
-@media all and (max-device-width: 1440px) {
-  #page aside .loisirs {
-    margin-top: 90vh;
-  }
-}
 #page aside .icons {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin-bottom: 0;
+}
+#page aside .icons img {
+  border: 1px solid black;
+  border-radius: 50% 50% 50% 50%;
 }
 #page .content {
   font-size: 1.2em;
-  margin-right: 10%;
-  text-align: justify;
   word-wrap: break-word;
+  width: 65%;
+  font-weight: 50;
+}
+@media all and (max-device-width: 768px) {
+  #page .content {
+    width: 90%;
+  }
+}
+#page .colleft {
+  font-size: 1.2em;
+  word-wrap: break-word;
+  width: 90%;
+  font-weight: 50;
+}
+@media all and (max-device-width: 768px) {
+  #page .colleft {
+    width: 90%;
+  }
 }
 #page main {
   width: 70%;
@@ -130,9 +149,10 @@ a:hover {
   width: 35%;
   font-weight: 600;
 }
-#page main .party .subSection .content {
-  width: 65%;
-  font-weight: 50;
+@media all and (max-device-width: 768px) {
+  #page main .party .subSection .date {
+    width: 100%;
+  }
 }
 #page main .party .recommandations {
   display: flex;
