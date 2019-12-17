@@ -95,6 +95,8 @@ a:hover {
   margin-right: 10%;
   text-align: justify;
   word-wrap: break-word;
+  width: 65%;
+  font-weight: 50;
 }
 #page main {
   width: 70%;
@@ -153,10 +155,6 @@ a:hover {
 #page main .party .subSection .date {
   width: 35%;
   font-weight: 600;
-}
-#page main .party .subSection .content {
-  width: 65%;
-  font-weight: 50;
 }
 #page main .party .recommandations {
   display: flex;
