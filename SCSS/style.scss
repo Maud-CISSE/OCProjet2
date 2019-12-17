@@ -1,12 +1,12 @@
 $colour-primary:#FF7043;
 
 $breakpoints: (
-    mobile: 576px,
+    laptopL: 1440px,
     tablet: 768px
 );
 
-@mixin mobile-only {
-    @media all and (max-device-width: map-get($breakpoints, mobile)) {
+@mixin laptopL-only {
+    @media all and (max-device-width: map-get($breakpoints, laptopL)) {
         @content;
     }
 }
@@ -38,30 +38,24 @@ a:hover{
     margin-left: 11%;
 }
   
-#page {
+  #page {
     display: flex;
     flex-wrap: wrap;
     @include tablet-only{
       flex-direction: column-reverse;
     }
-    aside {
+        aside {
             width: 30%;
             background-color: $colour-primary;
             color: #ffffff;
+            min-height: 100vh;
             @include tablet-only{
                 width: 100%;
             }
             .myphoto {
-<<<<<<< HEAD
-                    @include mobile-only{
-                      display: none;
-                        }
-                    @include tablet-only{
-=======
                   @include tablet-only{
->>>>>>> Week2
                       display: none;
-                        }
+                  }
             }
             .myphoto img{
                 border-radius: 50px;
@@ -70,17 +64,20 @@ a:hover{
                 margin-left: auto;
                 margin-right: auto;
                 display: block;
-            }
+              }
             h3 {
                 background-color: white;
                 color: $colour-primary;
                 text-align: center;
                 padding: 5px;
-            }
+                }
             .loisirs{
                 margin-top: 100vh;
                 @include tablet-only{
                     margin-top: 0;
+                }
+                @include laptopL-only{
+                    margin-top : 90vh;
                 }
             }
             .icons{
@@ -88,52 +85,6 @@ a:hover{
                 align-items: center;
                 justify-content: space-around;
             }
-<<<<<<< HEAD
-        }
-    .content {
-        font-size: 1.2em;
-        margin-right: 10%;
-        text-align: justify;
-        word-wrap: break-word;
-        width: 65%;
-        font-weight: 50;
-
-    }
-    main {
-        width: 70%;
-        @include mobile-only{
-            width: 100%;
-        }
-        @include tablet-only{
-            width: 100%;
-        }
-        #name{
-              color: $colour-primary;
-        }
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 0;
-            font-weight: normal;
-        }
-        h2 {
-            font-size: 1.25rem;
-            margin-bottom: 10%;
-        }
-        #souligne {
-            text-decoration : underline;
-            text-decoration-color: $colour-primary;
-        }
-        .party{
-              margin-top: 0;
-              i {
-                  margin-right: 5%;
-                  color : $colour-primary;
-              }
-              hr{
-                  height: 3px;
-                  background-color: $colour-primary;
-                  border: none;
-=======
           }
           .content {
             font-size: 1.2em;
@@ -144,9 +95,6 @@ a:hover{
           main {
             width: 70%;
             @include tablet-only{
-                width: 100%;
-            }
-            @include mobile-only{
                 width: 100%;
             }
               #name{
@@ -202,33 +150,9 @@ a:hover{
                           width: 50%;
                       }
                   }
->>>>>>> Week2
               }
-            .subSection{
-                display: flex;
-                @include mobile-only{
-                    flex-direction: column;
-                }
-                @include tablet-only{
-                    flex-direction: column;
-                }
-                .date {
-                    width: 35%;
-                    font-weight: 600;
-                }
-            }
-            .recommandations{
-                display: flex;
-                .left{
-                    width: 50%;
-                }
-                .right{
-                    width: 50%;
-                }
-            }
-        }
-        .container{
-            display: flex;
-        }              
-    }   
-}
+              .container{
+                  display: flex;
+              }              
+          }   
+  }
