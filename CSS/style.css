@@ -83,7 +83,6 @@ a:hover {
   font-size: 1.2em;
   word-wrap: break-word;
   width: 65%;
-  font-weight: 50;
 }
 @media all and (max-device-width: 768px) {
   #page .content {
@@ -94,7 +93,6 @@ a:hover {
   font-size: 1.2em;
   word-wrap: break-word;
   width: 90%;
-  font-weight: 50;
 }
 @media all and (max-device-width: 768px) {
   #page .colleft {

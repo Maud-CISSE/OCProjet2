@@ -89,7 +89,6 @@ a:hover{
             font-size: 1.2em;
             word-wrap: break-word;
             width: 65%;
-            font-weight: 50;
               @include tablet-only{
                   width: 90%;
               }
@@ -98,7 +97,6 @@ a:hover{
             font-size: 1.2em;
             word-wrap: break-word;
             width: 90%;
-            font-weight: 50;
               @include tablet-only{
                   width: 90%;
               }
