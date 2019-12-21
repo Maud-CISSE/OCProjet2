@@ -33,134 +33,132 @@ a:hover{
     margin-right: 5%;
 }
   
-  #page {
+#page {
     display: flex;
     flex-wrap: wrap;
     @include tablet-only{
       flex-direction: column-reverse;
         font-size: 0.9em;
     }
-        aside {
-            width: 30%;
-            background-color: $colour-primary;
-            color: #ffffff;
-            min-height: 100vh;
-            @include tablet-only{
-                width: 100%;
-                min-height: 100%;
-            }
-            .myphoto {
-                  @include tablet-only{
-                      display: none;
-                  }
-            }
-            .myphoto img{
-                border-radius: 50px;
-                width: 100px;
-                height: 100px;
-                margin-left: auto;
-                margin-right: auto;
-                display: block;
+    .aside {
+        width: 30%;
+        background-color: $colour-primary;
+        color: #ffffff;
+        min-height: 100vh;
+        @include tablet-only{
+            width: 100%;
+            min-height: 100%;
+        }
+        &__photo {
+              @include tablet-only{
+                  display: none;
               }
-            h3 {
-                background-color: white;
-                color: $colour-primary;
-                text-align: center;
-                padding: 5px;
-                }
-            .loisirs{
-                margin-top: 70vh;
-                @include tablet-only{
-                    margin-top: 0;
-                }
+        }
+        &__photo img{
+            border-radius: 50px;
+            width: 100px;
+            height: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+          }
+        h3 {
+            background-color: white;
+            color: $colour-primary;
+            text-align: center;
+            padding: 5px;
             }
-            .icons{
+        .loisirs{
+            margin-top: 70vh;
+            @include tablet-only{
+                margin-top: 0;
+            }
+        }
+        .icons{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-bottom: 0;
+            img {
+                border: 1px solid black;
+                border-radius: 50% 50% 50% 50%;
+            }
+        }
+        &__colleft {
+        font-size: 1.2em;
+        word-wrap: break-word;
+        width: 90%;
+          @include tablet-only{
+              width: 90%;
+          }
+       }
+    }
+
+    .content {
+        font-size: 1.2em;
+        word-wrap: break-word;
+        width: 65%;
+          @include tablet-only{
+              width: 90%;
+            }
+    }
+    main {
+        width: 70%;
+        @include tablet-only{
+            width: 100%;
+        }
+        #name{
+              color: $colour-primary;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 0;
+            font-weight: normal;
+        }
+        h2 {
+            font-size: 1.25rem;
+            margin-bottom: 10%;
+        }
+        #souligne {
+            text-decoration : underline;
+            text-decoration-color: $colour-primary;
+        }
+        .party{
+            margin-top: 0;
+            i {
+                margin-right: 5%;
+                color : $colour-primary;
+            }
+            hr{
+                height: 3px;
+                background-color: $colour-primary;
+                border: none;
+            }
+            &__subSection{
                 display: flex;
-                align-items: center;
-                justify-content: space-around;
-                margin-bottom: 0;
-                img {
-                    border: 1px solid black;
-                    border-radius: 50% 50% 50% 50%;
+                @include tablet-only{
+                    flex-direction: column;
+                }
+                .date {
+                    width: 35%;
+                    font-weight: 600;
+                    @include tablet-only{
+                    width: 100%;
+                    }
                 }
             }
-          }
-          .content {
-            font-size: 1.2em;
-            word-wrap: break-word;
-            width: 65%;
-              @include tablet-only{
-                  width: 90%;
-              }
-          }
-          .colleft {
-            font-size: 1.2em;
-            word-wrap: break-word;
-            width: 90%;
-              @include tablet-only{
-                  width: 90%;
-              }
-          }
-          main {
-            width: 70%;
-            @include tablet-only{
-                width: 100%;
+            &__recommandations{
+                display: flex;
+                @include tablet-only{
+                flex-direction: column;
+                }
+                .left, .right{
+                    width: 50%;
+                }
             }
-              #name{
-                  color: $colour-primary;
-              }
-              h1 {
-                  font-size: 3rem;
-                  margin-bottom: 0;
-                  font-weight: normal;
-              }
-              h2 {
-                  font-size: 1.25rem;
-                  margin-bottom: 10%;
-              }
-              #souligne {
-                  text-decoration : underline;
-                  text-decoration-color: $colour-primary;
-              }
-              .party{
-                  margin-top: 0;
-                  i {
-                      margin-right: 5%;
-                      color : $colour-primary;
-                  }
-                  hr{
-                      height: 3px;
-                      background-color: $colour-primary;
-                      border: none;
-                  }
-                  .subSection{
-                      display: flex;
-                        @include tablet-only{
-                            flex-direction: column;
-                        }
-                      .date {
-                          width: 35%;
-                          font-weight: 600;
-                          @include tablet-only{
-                            width: 100%;
-                        }
-                      }
-                  }
-                  .recommandations{
-                      display: flex;
-                      @include tablet-only{
-                        flex-direction: column;
-                      }
-                      .left{
-                          width: 50%;
-                      }
-                      .right{
-                          width: 50%;
-                      }
-                  }
-              }
-              .container{
-                  display: flex;
-              }              
-          }   
-  }
+        }
+        .container{
+            display: flex;
+        }              
+    }   
+}

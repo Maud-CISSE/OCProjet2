@@ -30,24 +30,24 @@ a:hover {
     font-size: 0.9em;
   }
 }
-#page aside {
+#page .aside {
   width: 30%;
   background-color: #FF7043;
   color: #ffffff;
   min-height: 100vh;
 }
 @media all and (max-device-width: 768px) {
-  #page aside {
+  #page .aside {
     width: 100%;
     min-height: 100%;
   }
 }
 @media all and (max-device-width: 768px) {
-  #page aside .myphoto {
+  #page .aside__photo {
     display: none;
   }
 }
-#page aside .myphoto img {
+#page .aside__photo img {
   border-radius: 50px;
   width: 100px;
   height: 100px;
@@ -55,29 +55,39 @@ a:hover {
   margin-right: auto;
   display: block;
 }
-#page aside h3 {
+#page .aside h3 {
   background-color: white;
   color: #FF7043;
   text-align: center;
   padding: 5px;
 }
-#page aside .loisirs {
+#page .aside .loisirs {
   margin-top: 70vh;
 }
 @media all and (max-device-width: 768px) {
-  #page aside .loisirs {
+  #page .aside .loisirs {
     margin-top: 0;
   }
 }
-#page aside .icons {
+#page .aside .icons {
   display: flex;
   align-items: center;
   justify-content: space-around;
   margin-bottom: 0;
 }
-#page aside .icons img {
+#page .aside .icons img {
   border: 1px solid black;
   border-radius: 50% 50% 50% 50%;
+}
+#page .aside__colleft {
+  font-size: 1.2em;
+  word-wrap: break-word;
+  width: 90%;
+}
+@media all and (max-device-width: 768px) {
+  #page .aside__colleft {
+    width: 90%;
+  }
 }
 #page .content {
   font-size: 1.2em;
@@ -86,16 +96,6 @@ a:hover {
 }
 @media all and (max-device-width: 768px) {
   #page .content {
-    width: 90%;
-  }
-}
-#page .colleft {
-  font-size: 1.2em;
-  word-wrap: break-word;
-  width: 90%;
-}
-@media all and (max-device-width: 768px) {
-  #page .colleft {
     width: 90%;
   }
 }
@@ -135,35 +135,32 @@ a:hover {
   background-color: #FF7043;
   border: none;
 }
-#page main .party .subSection {
+#page main .party__subSection {
   display: flex;
 }
 @media all and (max-device-width: 768px) {
-  #page main .party .subSection {
+  #page main .party__subSection {
     flex-direction: column;
   }
 }
-#page main .party .subSection .date {
+#page main .party__subSection .date {
   width: 35%;
   font-weight: 600;
 }
 @media all and (max-device-width: 768px) {
-  #page main .party .subSection .date {
+  #page main .party__subSection .date {
     width: 100%;
   }
 }
-#page main .party .recommandations {
+#page main .party__recommandations {
   display: flex;
 }
 @media all and (max-device-width: 768px) {
-  #page main .party .recommandations {
+  #page main .party__recommandations {
     flex-direction: column;
   }
 }
-#page main .party .recommandations .left {
-  width: 50%;
-}
-#page main .party .recommandations .right {
+#page main .party__recommandations .left, #page main .party__recommandations .right {
   width: 50%;
 }
 #page main .container {
