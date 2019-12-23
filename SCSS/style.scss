@@ -74,16 +74,6 @@ a:hover{
                 margin-top: 0;
             }
         }
-        .icons{
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            margin-bottom: 0;
-            img {
-                border: 1px solid black;
-                border-radius: 50% 50% 50% 50%;
-            }
-        }
         &__colleft {
         font-size: 1.2em;
         word-wrap: break-word;
@@ -93,7 +83,16 @@ a:hover{
           }
        }
     }
-
+    .icons{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 0;
+        img {
+            border: 1px solid black;
+            border-radius: 50% 50% 50% 50%;
+        }
+    }
     .content {
         font-size: 1.2em;
         word-wrap: break-word;
@@ -153,9 +152,9 @@ a:hover{
                 flex-direction: column;
                 }
             }
-            .left, .right{
-                width: 50%;
-            }
+        }
+        .left, .right{
+            width: 50%;
         }
         .container{
             display: flex;

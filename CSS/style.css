@@ -69,16 +69,6 @@ a:hover {
     margin-top: 0;
   }
 }
-#page .aside .icons {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-bottom: 0;
-}
-#page .aside .icons img {
-  border: 1px solid black;
-  border-radius: 50% 50% 50% 50%;
-}
 #page .aside__colleft {
   font-size: 1.2em;
   word-wrap: break-word;
@@ -88,6 +78,16 @@ a:hover {
   #page .aside__colleft {
     width: 90%;
   }
+}
+#page .icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 0;
+}
+#page .icons img {
+  border: 1px solid black;
+  border-radius: 50% 50% 50% 50%;
 }
 #page .content {
   font-size: 1.2em;
@@ -160,7 +160,7 @@ a:hover {
     flex-direction: column;
   }
 }
-#page main .party .left, #page main .party .right {
+#page main .left, #page main .right {
   width: 50%;
 }
 #page main .container {
