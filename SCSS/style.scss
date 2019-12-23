@@ -139,12 +139,12 @@ a:hover{
                 @include tablet-only{
                     flex-direction: column;
                 }
-                .date {
-                    width: 35%;
-                    font-weight: 600;
-                    @include tablet-only{
-                    width: 100%;
-                    }
+            }
+            .date {
+                width: 35%;
+                font-weight: 600;
+                @include tablet-only{
+                width: 100%;
                 }
             }
             &__recommandations{
@@ -152,9 +152,9 @@ a:hover{
                 @include tablet-only{
                 flex-direction: column;
                 }
-                .left, .right{
-                    width: 50%;
-                }
+            }
+            .left, .right{
+                width: 50%;
             }
         }
         .container{

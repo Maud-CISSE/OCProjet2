@@ -143,12 +143,12 @@ a:hover {
     flex-direction: column;
   }
 }
-#page main .party__subSection .date {
+#page main .party .date {
   width: 35%;
   font-weight: 600;
 }
 @media all and (max-width: 768px) {
-  #page main .party__subSection .date {
+  #page main .party .date {
     width: 100%;
   }
 }
@@ -160,7 +160,7 @@ a:hover {
     flex-direction: column;
   }
 }
-#page main .party__recommandations .left, #page main .party__recommandations .right {
+#page main .party .left, #page main .party .right {
   width: 50%;
 }
 #page main .container {
